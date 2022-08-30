@@ -1,0 +1,215 @@
+:root {
+    --color1: #2C3333;
+    --color2: #395B64;
+    --color3: #A5C9CA;
+    --color4: #E7F6F2;
+}
+body{
+    margin: 0;
+}
+hr {
+    border: 1px solid var(--color3);
+    width: 95%;
+    margin:15px auto;
+}
+.MainContent{
+    display: flex;
+    height: 100%;
+}
+
+/* ------- Sidebar -------*/
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width:20%;
+    min-width: 285px;
+    background-color: var(--color1);
+}
+.infoTab{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    height:50%;
+    padding:1rem;
+}
+.top{
+    text-align: center;
+}
+.infoTab h1,.infoTab h2{
+    color:var(--color3);
+    padding: 0;
+    margin:0;
+}
+.title{
+    color:var(--color2);
+}
+.profileImage{
+    padding:1rem;
+}
+.profileImage img{
+    background-color: var(--color3);
+}
+.profileImage img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 10px solid var(--color2);
+    object-fit: cover;
+}
+.social{
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    width:100%;
+    padding:1rem;
+}
+.social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    transition: all 0.2s linear;
+    color: #818a91;
+    background-color: #33353d;
+}
+.facebook:hover {
+    background-color: #3b5998;
+    color: white;
+}
+.mail:hover{
+    background-color: #BB001B;
+    color: white;
+}
+.linkedin:hover{
+    background-color:#0e76a8;
+    color: white;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+    height:50%;
+    padding: 4rem 0;
+}
+.nav a {
+    text-decoration: none;
+    color : var(--color3);
+    font-size: 1.5rem;
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+}
+.nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: hotpink;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .nav a:hover::after,
+  .nav a:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+  }
+
+
+  .button {
+    display: inline-flex;
+    height: 40px;
+    width: 250px;
+    border: 2px solid var(--color3);
+    margin: 20px 20px 20px 20px;
+    color: var(--color3);
+    text-decoration: none;
+    font-size: .8em;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+    
+  #button-7 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  #button-7 a {
+    position: relative;
+    left: 0;
+    transition: all .35s ease-Out;
+  }
+  
+  #dub-arrow {
+    width: 100%;
+    height: 100%;
+    background: var(--color3);
+    left: 400px;
+    position: absolute;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .35s ease-Out;
+    bottom: 0;
+  }
+  
+  #button-7 i {
+    font-size: 20px;
+    width: 20px;
+    height: auto;
+    color:var(--color1);
+  }
+  
+  #button-7:hover #dub-arrow {
+    left: 0;
+  }
+  
+  #button-7:hover a {
+    color:transparent;
+
+  }
+
+
+#Ab,.Ab {
+    display: none!important;
+}
+
+/* ------ Responsiveness ------ */
+@media screen and (max-height: 800px){ 
+    .nav{
+        padding: 1rem 0;
+        gap:1rem;
+    }
+}
+@media screen and (max-width: 1000px) {
+.MainContent{
+    flex-direction: column;
+    height: auto;
+}
+.sidebar{
+    width:100%;
+    height: 100vh;
+}
+.content{
+    width:100%;
+}
+
+.innerWk{
+    padding-left:0;
+    padding-right:0;
+}
+}

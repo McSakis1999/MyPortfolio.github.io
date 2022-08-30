@@ -1,0 +1,228 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanasis M. Portfolio</title>
+    <link rel="stylesheet" href="content.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="port.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/aa66ab2adb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="MainContent">
+        <div class="sidebar">
+            <div class="infoTab">
+                <div class="top">
+                    <div class="profileImage">
+                        <img src="Media/me3.png" alt="Thanasis Mitsikostas profile image">
+                    </div>
+                    <div class="info">
+                        <h1 class="name">Αθανάσιος Μητσικώστας</h1>
+                        <h2 class="title">Software Developer</h2>
+                    </div>
+                </div>
+                <div class="social">
+                    <a class="facebook" target="_blank" href="https://www.facebook.com/sakis.mitsikostas"><i
+                            class="fa fa-facebook"></i></a>
+                    <a class="mail" target="_blank" href="mailto:webdesign@example.com"><i
+                            class="fa-solid fa-envelope"></i></a>
+                    <a class="linkedin" target="_blank"
+                        href="https://www.linkedin.com/in/athanasios-mitsikostas-19a5121b2/"><i
+                            class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+            <hr>
+            <div class="nav">
+                <a data-scrolling="yes" onclick="myFunction(this.id)" href="#Ab" class="navItem Ab" id="#Ab">About</a>
+                <a data-scrolling="yes" onclick="myFunction(this.id)" href="#Ed" class="navItem" id="#Ed">Education</a>
+                <a data-scrolling="yes" onclick="myFunction(this.id)" href="#Wk" class="navItem" id="#Wk">Work
+                    Experience</a>
+                <a data-scrolling="yes" onclick="myFunction(this.id)" href="#Gl" class="navItem" id="#Gl">Future
+                    Goals</a>
+                    <div class="button" id="button-7">
+                        <div id="dub-arrow"><i class="fa-solid fa-download"></i></div>
+                        <a href="ΑΜητσικώστας2022.pdf" download="AMitsikostasCV" target="_blank">Curriculum Vitae</a>
+                      </div>
+            </div>
+        </div>
+        <div class="content">
+
+            <div id="Ab" class="contentTab about">
+                <a href="#" class="contentTitle">About</a>
+
+            </div>
+
+            <div id="Ed" class="contentTab education">
+                <a href="#" class="contentTitle">Education & Skills</a>
+                <div class="innerEd">
+                    <img class="backImage" src="Media/handSmaller.png" alt="Bee Group Logo">
+                    <div class="container">
+                        <i class="fa-solid fa-scroll fa-bounce"></i>
+                        <div class="degree">
+                            <p><strong>Μηχανικών Πληροφορικής</strong></p>
+                            <p><strong style="color:#395B64">Πανεπιστήμιο Θεσσαλίας</strong> [ 18/09/2017 – Τρέχουσα ]
+                            </p>
+                            <p>Διεύθυνση: (Ελλάδα)</p>
+                            <p>Τομέας/-είς σπουδών: Κατευθυνση Λογισμικου</p>
+                            <p>Είδος διδακτικών μονάδων: ECTS – Αριθμός διδακτικών μονάδων: <strong>240</strong></p>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <i class="fa-solid fa-id-card-clip fa-bounce"></i>
+                        <div class="degree">
+                            <p><strong>How to Design & Build a Website</strong></p>
+                            <p><strong style="color:#395B64">Grow Greek Tourism Online by Google</strong></p>
+                            <p>Διεύθυνση: Θεσσαλονίκη (Ελλάδα)</p>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <i class="fa-solid fa-scroll fa-bounce"></i>
+                        <div class="degree">
+                            <p><strong>ECPE Michigan Proficiency</strong></p>
+                            <p><strong style="color:#395B64">The University of Michigan</strong> [04 / 05/ 2014]</p>
+                            <p>Διεύθυνση: Βόλος (Ελλάδα)</p>
+                        </div>
+                    </div>
+                    <div class="skillsWrapper">
+                        <div class="skillsCont">
+                            <div class="skillsMenu">
+                                <div class="skillItem"><a href="#" class="skillItemTitle"><i class="fa-solid fa-globe"></i><span>Web Dev</span></a></div>
+                                <div class="skillItem"><a href="#" class="skillItemTitle"><i class="fa-solid fa-mobile"></i><span>Mobile Dev</span></a></div>
+                                <div class="skillItem"><a href="#" class="skillItemTitle"><i class="fa-brands fa-python"></i><span>Programming Languages</span></a>
+                                </div>
+                                <div class="skillItem"><a href="#" class="skillItemTitle"><i class="fa-solid fa-computer"></i><span>Technologies</span></a></div>
+                            </div>
+                            <div class="skillsInfo"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Wk" class="contentTab work">
+                <a href="#" class="contentTitle">Work Experience & Projects</a>
+                <div class="innerWk">
+                    <div class="container">
+                        <div class="img">
+                            <img class="bounce" src="Media/Bee.png" alt="Bee Group Logo">
+                        </div>
+                        <div class="colContainer">
+                            <h2>Bee Group | Δικτυακές Υπηρεσίες Σύμβουλοι Επιχειρήσεων<a href="https://www.bee.gr/"><i
+                                        class="fa-solid fa-arrow-up-right-from-square fa-shake"
+                                        style="margin-left:1rem;"></i></a></h2>
+                            <p><strong style="color:#395B64">Περίοδος εργασίας</strong> [ 03/05/2021 – 04/11/2021 ]</p>
+                            <ul>
+                                <li>Κατασκευή και συντήρηση ιστοσελίδων σε <strong>Wordpress / Joomla</strong></li>
+                                <li>Σχεδιασμός και κατασκευή βάσεων δεδομένων</li>
+                                <li>Κατασκευή εγχειριδίων ( manual )</li>
+                                <li>Δημιουργία <strong>back-end</strong> συστημάτων πάνω σε <strong>CodeIgniter -
+                                        GroceryCrud</strong> με την χρήση <strong>MVC</strong> αρχιτεκτονικής</li>
+                                <li>Σχεδιασμός και δημιουργία ιστοσελίδων με την χρήση <strong>HTML - CSS - JQUERY -
+                                        Bootstrap</strong></li>
+                                <li>Κατασκευή πληροφοριακού συστήματος χάρτη (GIS) με την χρήση
+                                    <strong>OpenLayers</strong>.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="img">
+                            <img class="bounce" src="Media/DInSAd_logo_final_web.png" alt="Dinsad Eu project logo">
+                        </div>
+                        <div class="colContainer">
+                            <h2>DInSAd | Digital Inclusion of Low Skilled Adult People - Erasmus+<a
+                                    href="https://www.dinsad.eu/en/"><i
+                                        class="fa-solid fa-arrow-up-right-from-square fa-shake"
+                                        style="margin-left:1rem;"></i></a></h2>
+                            <p style="text-align:justify">Συμμετοχή στην ομάδα έργου του χορηγούμενου από την ευρωπαϊκή
+                                ένωση προγράμματος <a style="text-decoration: none;"
+                                    href="https://tool.dinsad.eu/"><strong>"DInSAd | Digital
+                                        Inclusion of Low Skilled Adult People - IO3"</strong></a> . Ο ρόλος μου στο έργο
+                                ήταν η έρευνα,σχεδιασμός και υλοποίηση ενός παιχνιδιού με στόχο την εκπαίδευση της
+                                τρίτης ηλικίας στην χρήση τεχνολογιών του διαδικτύου.
+                                Υποχρεώσεις μου ήταν η δημιουργία μιας <strong>Gamified</strong> ιστοσελίδας καθώς και η
+                                επικοινωνία με τους Ευρωπαίους.</p>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="img">
+                            <img class="bounce" src="Media/icont.png" alt="Dinsad Eu project logo">
+                        </div>
+                        <div class="colContainer">
+                            <h2>I_CONTENT - ERASMUS+<a href="https://icontent.projectsgallery.eu/"><i
+                                        class="fa-solid fa-arrow-up-right-from-square fa-shake"
+                                        style="margin-left:1rem;"></i></a></h2>
+                            <p style="text-align:justify">Συμμετοχή στην ομάδα έργου του χορηγούμενου από την ευρωπαϊκή
+                                ένωση προγράμματος <strong>"IO2 Software for
+                                    the development of interactive content" και "IO3 gamification tools guide"</strong>.
+                                Στόχος των δύο παραδοτέων
+                                ήταν η έρευνα,χρήση και παρουσίαση εργαλείων που αφορούν την δημιουργία
+                                αλληλεπιδραστικού υλικού ή
+                                εργαλείων ενσωμάτωσης μηχανισμών παιχνιδιού , τα οποία να είναι συμβατά με <strong>LMS ή
+                                    CMS</strong> τεχνολογίες. Η
+                                συμμετοχή μου στο έργο αφορούσε το κομμάτι της έρευνας και δοκιμής των εργαλείων, καθώς
+                                και της
+                                παρουσίασης τους στους Ευρωπαίους εταίρους.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Gl" class="contentTab goals"><a href="#" class="contentTitle">Future Goals</a>
+                <div class="innerGl">
+
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="Media/solidity.jpg" alt="Solidity, a programming language from creating smart contracts" />
+                        </div>
+                        <div class="card-body">
+                            <span class="tag tag-teal">Technology</span>
+                            <h4>
+                                Solidity - Smart Contracts
+                            </h4>
+                            <p>
+                                Οι τεχνολογίες <b>blockchain</b> και τα <b>κρυπτονομίσματα</b> αποτελούν εντυπωσιακές τεχνολογίες με πολλές προοπτικές για το μέλλον. Η αποκεντροποιημένη φύση τους προσφέρει δυνατότητες για την δημιουργία πολλών νέων τεχνολογιών!
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="Media/Angular.jpg"
+                                alt="Angular Framework" />
+                        </div>
+                        <div class="card-body">
+                            <span class="tag tag-teal">Technology</span>
+                            <h4>
+                                Angular
+                            </h4>
+                            <p>
+                                H <b>Angular</b> σε συνδυασμό με την <b>Typescript</b> αποτελεί διαδεδομένο framework στον χώρο του ελληνικού αλλα και παγκόσμιου web development, οπότε υφίσταται δυνατό εργαλείο γνώσης για τον εργασιακό τομέα! 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="Media/GDPR.jpg" alt="GDPR" />
+                        </div>
+                        <div class="card-body">
+                            <span class="tag tag-purple">Education</span>
+                            <h4>
+                                GDPR - DPO Licence
+                            </h4>
+                            <p>
+                                Το <b>GDPR</b> εδώ και χρόνια εν εφαρμογή αποτελεί ένα τομέα άγνωστο τόσο σε επιχειρήσεις όσο και σε ιδιώτες. Η εξειδίκευση πάνω σε αυτό προσφέρει γνώσης πάνω στα δικαιώματα αλλα και τις υποχρεώσεις μας!
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+</body>
+
+</html>
